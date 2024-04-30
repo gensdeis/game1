@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="serialize">
+      <UniqueIdentifier>{ee434089-5494-4b42-9396-93b3d24a852c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="auth">
+      <UniqueIdentifier>{f0f58393-faa3-489d-ab96-6a1b11cb1454}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="precompiled">
+      <UniqueIdentifier>{62659095-ec0f-45ae-b7c6-890b60cf71d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{84216872-09d6-484f-b1c1-9f5fa784270c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\zip">
+      <UniqueIdentifier>{759c44ac-ab84-4fd8-8835-c1706b6a041a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{a76090a9-d5d5-4503-95aa-d75245042aba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="acceptor.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="asioThread.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="server.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="session.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="thread.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="socket.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="socketBuffer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="connector.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="sessionPool.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="packetContextPool.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="network.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="sessionWaitPool.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="networkConfig.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json\jsoncpp.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="serialize\serialize_buffer.cpp">
+      <Filter>serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="..\auth\AuthCrypt.cpp">
+      <Filter>auth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\auth\ARC4.cpp">
+      <Filter>auth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\auth\BigNumber.cpp">
+      <Filter>auth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\auth\Sha1.cpp">
+      <Filter>auth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\auth\HMACSHA1.cpp">
+      <Filter>auth</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx_net.cpp">
+      <Filter>precompiled</Filter>
+    </ClCompile>
+    <ClCompile Include="serialize\serialize_buffer_pool.cpp">
+      <Filter>serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\config.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="networkController.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="serialize\serialize_packer.cpp">
+      <Filter>serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="serialize\serialize_type.cpp">
+      <Filter>serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zip\unzip.cpp">
+      <Filter>common\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zip\zip.cpp">
+      <Filter>common\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\dump.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\http_network.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\http_process.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\httpClientManager.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\stopWatch.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\mirapi.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\profileManager.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\serverlogManager.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\util.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="acceptor.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="asioThread.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="server.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="session.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="thread.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="socket.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="socketBuffer.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="packetContext.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="connector.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="network.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="sessionPool.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="packetContextPool.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="eventWorker.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="worker.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="packetWorker.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="sessionWorker.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="sessionWaitPool.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="networkConfig.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json\json.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json\json-forwards.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="serialize\serialize_buffer.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="serialize\serialize_buffer_pool.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="serialize\serialize_packer.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="serialize\serialize_type.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="define.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\auth\AuthCrypt.h">
+      <Filter>auth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\auth\ARC4.h">
+      <Filter>auth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\auth\BigNumber.h">
+      <Filter>auth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\auth\Sha1.h">
+      <Filter>auth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\auth\HMACSHA1.h">
+      <Filter>auth</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx_net.h">
+      <Filter>precompiled</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\config.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="networkController.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zip\zip.h">
+      <Filter>common\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zip\unzip.h">
+      <Filter>common\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\concurrentQueue.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\concurrentStack.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\concurrentStackPool.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\concurrentVector.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\concurrentMap.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\concurrentMemPool.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\httpClientManager.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\dump.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\gameCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\gameStruct.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\http_network.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\http_process.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\serverlogManager.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\singleton.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\logger.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\mirapi.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\mvector.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\process_info.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\profileManager.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\waitForShutdown.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\stopWatch.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\util.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\vector3D.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\base64.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\call_stack.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\define.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\trie_map.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\multi_dimension_map.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

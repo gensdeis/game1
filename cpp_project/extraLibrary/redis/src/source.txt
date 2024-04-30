@@ -1,0 +1,22 @@
+﻿[cpp-redis]
+https://github.com/cpp-redis/cpp_redis
+
+1. cpp_redis-master 압축 해제한 폴더의 tacopie 폴더에 tacopie.zip 압축 해제
+
+2. 두 프로젝트 /mtd /md 설정
+
+[linux 환경 빌드 참조]
+0. tacopie.zip 
+1. copy cpp_redis-master\tacopie
+2. https://github.com/Cylix/cpp_redis/wiki/Mac-&-Linux-Install
+
+[redis_client]
+
+https://github.com/shawn246/redis_client
+
+https://jacking75.github.io/cpp_use_redis/
+
+
+1. /extraLibrary/redis/include 파일 (SVN 받은거) 사용
+
+2. 프록젝트에 포함 해서 빌드한다.

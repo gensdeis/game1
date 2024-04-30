@@ -1,0 +1,893 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="KR_Debug|Win32">
+      <Configuration>KR_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="KR_Debug|x64">
+      <Configuration>KR_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="KR_PublishBuild|Win32">
+      <Configuration>KR_PublishBuild</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="KR_PublishBuild|x64">
+      <Configuration>KR_PublishBuild</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="KR_Release|Win32">
+      <Configuration>KR_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="KR_Release|x64">
+      <Configuration>KR_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="PublishBuild|Win32">
+      <Configuration>PublishBuild</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="PublishBuild|x64">
+      <Configuration>PublishBuild</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="remote|Win32">
+      <Configuration>remote</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="remote|x64">
+      <Configuration>remote</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{46C48981-FEE0-4F8F-9C6F-0D5CEE1EF11D}</ProjectGuid>
+    <RootNamespace>game</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='KR_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='remote|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='KR_Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PublishBuild|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='KR_PublishBuild|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <EnableUnitySupport>true</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='KR_Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <EnableUnitySupport>true</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='remote|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <EnableUnitySupport>true</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <EnableUnitySupport>true</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='KR_Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <EnableUnitySupport>true</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PublishBuild|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <EnableUnitySupport>true</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='KR_PublishBuild|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <EnableUnitySupport>true</EnableUnitySupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='KR_Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='remote|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='KR_Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='PublishBuild|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='KR_PublishBuild|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='KR_Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='remote|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='KR_Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='PublishBuild|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='KR_PublishBuild|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(ProjectName)\x64\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\Object\$(Configuration)\$(ProjectName)\x64\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='KR_Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(ProjectName)\x64\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\Object\$(Configuration)\$(ProjectName)\x64\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='remote|x64'">
+    <OutDir>$(SolutionDir)bin\$(ProjectName)\x64\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\Object\$(Configuration)\$(ProjectName)\x64\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(ProjectName)\x64\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\Object\$(Configuration)\$(ProjectName)\x64\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CopyCppRuntimeToOutputDir>false</CopyCppRuntimeToOutputDir>
+    <CopyLocalDeploymentContent>false</CopyLocalDeploymentContent>
+    <CopyLocalProjectReference>false</CopyLocalProjectReference>
+    <CopyLocalDebugSymbols>false</CopyLocalDebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='KR_Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(ProjectName)\x64\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\Object\$(Configuration)\$(ProjectName)\x64\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CopyCppRuntimeToOutputDir>false</CopyCppRuntimeToOutputDir>
+    <CopyLocalDeploymentContent>false</CopyLocalDeploymentContent>
+    <CopyLocalProjectReference>false</CopyLocalProjectReference>
+    <CopyLocalDebugSymbols>false</CopyLocalDebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PublishBuild|x64'">
+    <OutDir>$(SolutionDir)bin\$(ProjectName)\x64\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\Object\$(Configuration)\$(ProjectName)\x64\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CopyCppRuntimeToOutputDir>false</CopyCppRuntimeToOutputDir>
+    <CopyLocalDeploymentContent>false</CopyLocalDeploymentContent>
+    <CopyLocalProjectReference>false</CopyLocalProjectReference>
+    <CopyLocalDebugSymbols>false</CopyLocalDebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='KR_PublishBuild|x64'">
+    <OutDir>$(SolutionDir)bin\$(ProjectName)\x64\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\Object\$(Configuration)\$(ProjectName)\x64\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CopyCppRuntimeToOutputDir>false</CopyCppRuntimeToOutputDir>
+    <CopyLocalDeploymentContent>false</CopyLocalDeploymentContent>
+    <CopyLocalProjectReference>false</CopyLocalProjectReference>
+    <CopyLocalDebugSymbols>false</CopyLocalDebugSymbols>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\extraLibrary;..\extraLibrary\boost\include;.\;..\extraLibrary\pathEngine;..\extraLibrary\json;..\extraLibrary\network\serialize;..\extraLibrary\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_WIN32_WINNT=0x0601;_CONSOLE;JSON_IS_AMALGAMATION;BOOST_BIND_GLOBAL_PLACEHOLDERS;_OPTIONAL_;_USE_FILE_LOG;_USE_DEV_GM_OPER;_USE_NEW_NOT_ALLOW_PACKET;_USE_NOT_ALLOW_DUPLICATION_LOGIN;_USE_PLAYER_EMERGENCY_CLOSE;_USE_SERVER_CALC_POWER;_USE_PACKET_SERIALIZE_CHECK;_USE_GLOBAL_CONTENTS_TICKET;_USE_GATE;_USE_WORLD_GAME;_USE_GATE_COMMUNITY;_USE_PACKET_WORKER_EX;_USE_GLOBAL_SERVICE;_USE_GLOBAL_EXCHANGE_MERGE;_USE_NEW_ITEM_DURABILITY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ObjectFileName>$(IntDir)/%(RelativeDir)/</ObjectFileName>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>Default</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)bin\lib\x64\$(Configuration);..\extraLibrary\boost\bin\lib;..\extraLibrary\openssl\bin\lib\VC;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>network.lib;dbghelp.lib;libcrypto64MDd.lib;libcrypto64MTd.lib;libssl64MDd.lib;libssl64MTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(TargetDir)*"
+
+IF NOT EXIST $(ProjectDir)bin MD $(ProjectDir)bin
+IF NOT EXIST $(ProjectDir)bin_community MD $(ProjectDir)bin_community
+IF NOT EXIST $(ProjectDir)bin_game  MD $(ProjectDir)bin_game
+IF NOT EXIST $(ProjectDir)bin_gate MD $(ProjectDir)bin_gate
+IF NOT EXIST $(ProjectDir)bin_indun MD $(ProjectDir)bin_indun
+IF NOT EXIST $(ProjectDir)bin_worldgame MD $(ProjectDir)bin_worldgame
+IF NOT EXIST $(ProjectDir)bin_worldindun MD $(ProjectDir)bin_worldindun
+IF NOT EXIST $(ProjectDir)bin_worldcommunity MD $(ProjectDir)bin_worldcommunity
+
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_community\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_game\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_gate\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_indun\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_worldgame\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_worldindun\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_worldcommunity\*"
+
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin\game.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_community\community.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_game\game.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_gate\gate.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_indun\indun.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_worldgame\world_game.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_worldindun\world_indun.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_worldcommunity\world_community.*"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='KR_Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\extraLibrary;..\extraLibrary\boost\include;.\;..\extraLibrary\pathEngine;..\extraLibrary\json;..\extraLibrary\network\serialize;..\extraLibrary\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_WIN32_WINNT=0x0601;_CONSOLE;JSON_IS_AMALGAMATION;BOOST_BIND_GLOBAL_PLACEHOLDERS;_OPTIONAL_;_MOVE_SYNC;_MOVE_SYNC2;_MOVE_CONFIRM;_CHANNEL;_SERVER_MOVE_SPEED_CHECK;_USE_FILE_LOG;_USER_COUNT;_USE_DEV_GM_OPER;_USE_NEW_NOT_ALLOW_PACKET;_USE_NOT_ALLOW_DUPLICATION_LOGIN;_USE_PLAYER_EMERGENCY_CLOSE;_USE_SERVER_CALC_POWER;_USE_PACKET_SERIALIZE_CHECK;_USE_WORLD_GAME;_USE_GATE_COMMUNITY;_USE_PACKET_WORKER_EX;_USE_NEW_ITEM_DURABILITY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ObjectFileName>$(IntDir)/%(RelativeDir)/</ObjectFileName>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>Default</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)bin\lib\x64\$(Configuration);..\extraLibrary\boost\bin\lib;..\extraLibrary\openssl\bin\lib\VC;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>network.lib;dbghelp.lib;libcrypto64MDd.lib;libcrypto64MTd.lib;libssl64MDd.lib;libssl64MTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(TargetDir)*"
+
+IF NOT EXIST $(ProjectDir)bin MD $(ProjectDir)bin
+IF NOT EXIST $(ProjectDir)bin_community MD $(ProjectDir)bin_community
+IF NOT EXIST $(ProjectDir)bin_game  MD $(ProjectDir)bin_game
+IF NOT EXIST $(ProjectDir)bin_gate MD $(ProjectDir)bin_gate
+IF NOT EXIST $(ProjectDir)bin_indun MD $(ProjectDir)bin_indun
+IF NOT EXIST $(ProjectDir)bin_worldgame MD $(ProjectDir)bin_worldgame
+IF NOT EXIST $(ProjectDir)bin_worldindun MD $(ProjectDir)bin_worldindun
+IF NOT EXIST $(ProjectDir)bin_worldcommunity MD $(ProjectDir)bin_worldcommunity
+
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_community\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_game\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_gate\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_indun\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_worldgame\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_worldindun\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_worldcommunity\*"
+
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin\game.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_community\community.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_game\game.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_gate\gate.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_indun\indun.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_worldgame\world_game.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_worldindun\world_indun.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_worldcommunity\world_community.*"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='remote|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\extraLibrary;..\extraLibrary\boost\include;.\;..\extraLibrary\pathEngine;..\extraLibrary\json;..\extraLibrary\network\serialize;..\extraLibrary\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_WIN32_WINNT=0x0601;_CONSOLE;JSON_IS_AMALGAMATION;BOOST_BIND_GLOBAL_PLACEHOLDERS;_OPTIONAL_;_MOVE_SYNC;_MOVE_SYNC2;_MOVE_CONFIRM;_CHANNEL;_SERVER_MOVE_SPEED_CHECK;_USE_FILE_LOG;_USER_COUNT;_USE_DEV_GM_OPER;_USE_GLOBAL_SERVICE;_USE_NEW_NOT_ALLOW_PACKET;_USE_NOT_ALLOW_DUPLICATION_LOGIN;_USE_PLAYER_EMERGENCY_CLOSE;_USE_SERVER_CALC_POWER;_USE_PACKET_SERIALIZE_CHECK;_USE_GLOBAL_CONTENTS_TICKET;_USE_GATE;_USE_WORLD_GAME;_USE_GATE_COMMUNITY;_USE_NEW_GLOBAL_OCCUPATIONWAR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ObjectFileName>$(IntDir)/%(RelativeDir)/</ObjectFileName>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>Default</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)bin\lib\x64\$(Configuration);..\extraLibrary\boost\bin\lib;..\extraLibrary\openssl\bin\lib\VC;..\extraLibrary\g3log\bin\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>g3log.lib;network.lib;dbghelp.lib;libcrypto64MDd.lib;libcrypto64MTd.lib;libssl64MDd.lib;libssl64MTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(TargetDir)*"
+
+IF NOT EXIST $(ProjectDir)bin MD $(ProjectDir)bin
+IF NOT EXIST $(ProjectDir)bin_community MD $(ProjectDir)bin_community
+IF NOT EXIST $(ProjectDir)bin_game  MD $(ProjectDir)bin_game
+IF NOT EXIST $(ProjectDir)bin_gate MD $(ProjectDir)bin_gate
+IF NOT EXIST $(ProjectDir)bin_indun MD $(ProjectDir)bin_indun
+IF NOT EXIST $(ProjectDir)bin_worldgame MD $(ProjectDir)bin_worldgame
+IF NOT EXIST $(ProjectDir)bin_worldindun MD $(ProjectDir)bin_worldindun
+IF NOT EXIST $(ProjectDir)bin_worldcommunity MD $(ProjectDir)bin_worldcommunity
+
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_community\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_game\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_gate\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_indun\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_worldgame\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_worldindun\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_worldcommunity\*"
+
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin\game.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_community\community.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_game\game.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_gate\gate.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_indun\indun.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_worldgame\world_game.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_worldindun\world_indun.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_worldcommunity\world_community.*"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='KR_Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PublishBuild|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='KR_PublishBuild|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\extraLibrary;..\extraLibrary\boost\include;.\;..\extraLibrary\pathEngine;..\extraLibrary\json;..\extraLibrary\network\serialize;..\extraLibrary\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_NDEBUG;_WINDOWS;_WIN32_WINNT=0x0601;_CONSOLE;JSON_IS_AMALGAMATION;BOOST_BIND_GLOBAL_PLACEHOLDERS;_OPTIONAL_;_MOVE_SYNC;_MOVE_SYNC2;_MOVE_CONFIRM;_CHANNEL;_SERVER_MOVE_SPEED_CHECK;_USE_FILE_LOG;_USER_COUNT;_USE_NEW_NOT_ALLOW_PACKET;_USE_DEV_GM_OPER;_USE_NOT_ALLOW_DUPLICATION_LOGIN;_USE_PLAYER_EMERGENCY_CLOSE;_USE_SERVER_CALC_POWER;_USE_PACKET_SERIALIZE_CHECK;_USE_GLOBAL_CONTENTS_TICKET;_USE_GATE;_USE_WORLD_GAME;_USE_GATE_COMMUNITY;_USE_PACKET_WORKER_EX;_USE_GLOBAL_SERVICE;_USE_GLOBAL_EXCHANGE_MERGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ObjectFileName>$(IntDir)/%(RelativeDir)/</ObjectFileName>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>Default</LanguageStandard>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)bin\lib\x64\$(Configuration);..\extraLibrary\boost\bin\lib;..\extraLibrary\openssl\bin\lib\VC;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>network.lib;dbghelp.lib;libcrypto64MD.lib;libcrypto64MT.lib;libssl64MD.lib;libssl64MT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(TargetDir)*"
+
+IF NOT EXIST $(ProjectDir)bin MD $(ProjectDir)bin
+IF NOT EXIST $(ProjectDir)bin_community MD $(ProjectDir)bin_community
+IF NOT EXIST $(ProjectDir)bin_game  MD $(ProjectDir)bin_game
+IF NOT EXIST $(ProjectDir)bin_gate MD $(ProjectDir)bin_gate
+IF NOT EXIST $(ProjectDir)bin_indun MD $(ProjectDir)bin_indun
+IF NOT EXIST $(ProjectDir)bin_worldgame MD $(ProjectDir)bin_worldgame
+IF NOT EXIST $(ProjectDir)bin_worldindun MD $(ProjectDir)bin_worldindun
+IF NOT EXIST $(ProjectDir)bin_worldcommunity MD $(ProjectDir)bin_worldcommunity
+
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_community\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_game\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_gate\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_indun\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_worldgame\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_worldindun\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_worldcommunity\*"
+
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin\game.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_community\community.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_game\game.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_gate\gate.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_indun\indun.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_worldgame\world_game.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_worldindun\world_indun.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_worldcommunity\world_community.*"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='KR_Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\extraLibrary;..\extraLibrary\boost\include;.\;..\extraLibrary\pathEngine;..\extraLibrary\json;..\extraLibrary\network\serialize;..\extraLibrary\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_NDEBUG;_WINDOWS;_WIN32_WINNT=0x0601;_CONSOLE;JSON_IS_AMALGAMATION;BOOST_BIND_GLOBAL_PLACEHOLDERS;_OPTIONAL_;_MOVE_SYNC;_MOVE_SYNC2;_MOVE_CONFIRM;_CHANNEL;_SERVER_MOVE_SPEED_CHECK;_USE_FILE_LOG;_USER_COUNT;_USE_NEW_NOT_ALLOW_PACKET;_BOT_USE;_USE_DEV_GM_OPER;_USE_NOT_ALLOW_DUPLICATION_LOGIN;_USE_PLAYER_EMERGENCY_CLOSE;_USE_SERVER_CALC_POWER;_USE_PACKET_SERIALIZE_CHECK;_USE_WORLD_GAME;_USE_GATE_COMMUNITY;_USE_PACKET_WORKER_EX___;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ObjectFileName>$(IntDir)/%(RelativeDir)/</ObjectFileName>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>Default</LanguageStandard>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)bin\lib\x64\$(Configuration);..\extraLibrary\boost\bin\lib;..\extraLibrary\openssl\bin\lib\VC;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>network.lib;dbghelp.lib;libcrypto64MD.lib;libcrypto64MT.lib;libssl64MD.lib;libssl64MT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(TargetDir)*"
+
+IF NOT EXIST $(ProjectDir)bin MD $(ProjectDir)bin
+IF NOT EXIST $(ProjectDir)bin_community MD $(ProjectDir)bin_community
+IF NOT EXIST $(ProjectDir)bin_game  MD $(ProjectDir)bin_game
+IF NOT EXIST $(ProjectDir)bin_gate MD $(ProjectDir)bin_gate
+IF NOT EXIST $(ProjectDir)bin_indun MD $(ProjectDir)bin_indun
+IF NOT EXIST $(ProjectDir)bin_worldgame MD $(ProjectDir)bin_worldgame
+IF NOT EXIST $(ProjectDir)bin_worldindun MD $(ProjectDir)bin_worldindun
+IF NOT EXIST $(ProjectDir)bin_worldcommunity MD $(ProjectDir)bin_worldcommunity
+
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_community\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_game\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_gate\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_indun\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_worldgame\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_worldindun\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_worldcommunity\*"
+
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin\game.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_community\community.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_game\game.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_gate\gate.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_indun\indun.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_worldgame\world_game.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_worldindun\world_indun.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_worldcommunity\world_community.*"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PublishBuild|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\extraLibrary;..\extraLibrary\boost\include;.\;..\extraLibrary\pathEngine;..\extraLibrary\json;..\extraLibrary\network\serialize;..\extraLibrary\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_NDEBUG;_WINDOWS;_WIN32_WINNT=0x0601;_CONSOLE;JSON_IS_AMALGAMATION;BOOST_BIND_GLOBAL_PLACEHOLDERS;_OPTIONAL_;_MOVE_SYNC;_MOVE_SYNC2;_MOVE_CONFIRM;_CHANNEL;_SERVER_MOVE_SPEED_CHECK;_USE_FILE_LOG;_USER_COUNT;_USE_NEW_NOT_ALLOW_PACKET;_USE_NOT_ALLOW_DUPLICATION_LOGIN;_USE_PLAYER_EMERGENCY_CLOSE;_USE_SERVER_CALC_POWER;_USE_PACKET_SERIALIZE_CHECK;_USE_GLOBAL_CONTENTS_TICKET;_USE_GATE;_USE_WORLD_GAME;_USE_GATE_COMMUNITY;_USE_PACKET_WORKER_EX;_USE_GLOBAL_SERVICE;_USE_GLOBAL_EXCHANGE_MERGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ObjectFileName>$(IntDir)/%(RelativeDir)/</ObjectFileName>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>Default</LanguageStandard>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)bin\lib\x64\$(Configuration);..\extraLibrary\boost\bin\lib;..\extraLibrary\openssl\bin\lib\VC;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>network.lib;dbghelp.lib;libcrypto64MD.lib;libcrypto64MT.lib;libssl64MD.lib;libssl64MT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(TargetDir)*"
+
+IF NOT EXIST $(ProjectDir)bin MD $(ProjectDir)bin
+IF NOT EXIST $(ProjectDir)bin_community MD $(ProjectDir)bin_community
+IF NOT EXIST $(ProjectDir)bin_game  MD $(ProjectDir)bin_game
+IF NOT EXIST $(ProjectDir)bin_gate MD $(ProjectDir)bin_gate
+IF NOT EXIST $(ProjectDir)bin_indun MD $(ProjectDir)bin_indun
+IF NOT EXIST $(ProjectDir)bin_worldgame MD $(ProjectDir)bin_worldgame
+IF NOT EXIST $(ProjectDir)bin_worldindun MD $(ProjectDir)bin_worldindun
+IF NOT EXIST $(ProjectDir)bin_worldcommunity MD $(ProjectDir)bin_worldcommunity
+
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_community\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_game\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_gate\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_indun\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_worldgame\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_worldindun\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_worldcommunity\*"
+
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin\game.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_community\community.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_game\game.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_gate\gate.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_indun\indun.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_worldgame\world_game.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_worldindun\world_indun.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_worldcommunity\world_community.*"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='KR_PublishBuild|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\extraLibrary;..\extraLibrary\boost\include;.\;..\extraLibrary\pathEngine;..\extraLibrary\json;..\extraLibrary\network\serialize;..\extraLibrary\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_NDEBUG;_WINDOWS;_WIN32_WINNT=0x0601;_CONSOLE;JSON_IS_AMALGAMATION;BOOST_BIND_GLOBAL_PLACEHOLDERS;_OPTIONAL_;_MOVE_SYNC;_MOVE_SYNC2;_MOVE_CONFIRM;_CHANNEL;_SERVER_MOVE_SPEED_CHECK;_USE_FILE_LOG;_USER_COUNT;_USE_NEW_NOT_ALLOW_PACKET;_USE_NOT_ALLOW_DUPLICATION_LOGIN;_USE_PLAYER_EMERGENCY_CLOSE;_USE_SERVER_CALC_POWER;_USE_PACKET_SERIALIZE_CHECK;_USE_WORLD_GAME;_USE_GATE_COMMUNITY;_USE_PACKET_WORKER_EX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ObjectFileName>$(IntDir)/%(RelativeDir)/</ObjectFileName>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>Default</LanguageStandard>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)bin\lib\x64\$(Configuration);..\extraLibrary\boost\bin\lib;..\extraLibrary\openssl\bin\lib\VC;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>network.lib;dbghelp.lib;libcrypto64MD.lib;libcrypto64MT.lib;libssl64MD.lib;libssl64MT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(TargetDir)*"
+
+IF NOT EXIST $(ProjectDir)bin MD $(ProjectDir)bin
+IF NOT EXIST $(ProjectDir)bin_community MD $(ProjectDir)bin_community
+IF NOT EXIST $(ProjectDir)bin_game  MD $(ProjectDir)bin_game
+IF NOT EXIST $(ProjectDir)bin_gate MD $(ProjectDir)bin_gate
+IF NOT EXIST $(ProjectDir)bin_indun MD $(ProjectDir)bin_indun
+IF NOT EXIST $(ProjectDir)bin_worldgame MD $(ProjectDir)bin_worldgame
+IF NOT EXIST $(ProjectDir)bin_worldindun MD $(ProjectDir)bin_worldindun
+IF NOT EXIST $(ProjectDir)bin_worldcommunity MD $(ProjectDir)bin_worldcommunity
+
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_community\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_game\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_gate\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_indun\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_worldgame\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_worldindun\*"
+copy/y "$(ProjectDir)..\extraLibrary\openssl\bin\*.dll" "$(ProjectDir)bin_worldcommunity\*"
+
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin\game.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_community\community.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_game\game.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_gate\gate.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_indun\indun.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_worldgame\world_game.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_worldindun\world_indun.*"
+copy/y "$(TargetDir)game.*" "$(ProjectDir)bin_worldcommunity\world_community.*"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\extraLibrary\common\action_logger.cpp" />
+    <ClCompile Include="gameEventWorker.cpp" />
+    <ClCompile Include="gamelogManager.cpp" />
+    <ClCompile Include="gamePacketWorker.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="networkManager.cpp" />
+    <ClCompile Include="rpc.cpp" />
+    <ClCompile Include="rpcManager.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='KR_Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='PublishBuild|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='KR_PublishBuild|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='remote|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='KR_Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="user.cpp" />
+    <ClCompile Include="userManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\extraLibrary\common\action_logger.h" />
+    <ClInclude Include="..\extraLibrary\common\process_info.h" />
+    <ClInclude Include="..\extraLibrary\protocol\base_protocol.h" />
+    <ClInclude Include="..\extraLibrary\protocol\base_protocol_enumstring.h" />
+    <ClInclude Include="..\extraLibrary\protocol\mp_error_message.h" />
+    <ClInclude Include="..\extraLibrary\protocol\rpc_protocol.h" />
+    <ClInclude Include="..\extraLibrary\protocol\rpc_protocol_enumstring.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_ability_value.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_account_storage.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_boss_contribution.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_buff.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_cart_item.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_cash_shop_buy_count.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_character.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_character_ability.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_character_ability_stat.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_character_stat.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_comm_character.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_comm_equip.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_comm_equip_list.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_contents_onoff_data.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_contents_onoff_info.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_daily_content.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_damage_list.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_damage_result.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_drop_item_info.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_enchant_option.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_enchant_options.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_enchant_option_list.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_equip_info.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_equip_info_list.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_equip_item_info.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_equip_list.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_exchange_buybag_item.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_exchange_buybag_list.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_exchange_item_count.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_exchange_item_count_list.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_exchange_item_info.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_exchange_market_price.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_exchange_registrant_item.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_exchange_registrant_list.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_field_boss.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_game_setup.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_guild_member.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_inventory.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_item.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_item_add.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_item_count_update.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_item_id.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_item_iuid.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_item_iuid_list.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_item_option.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_list_int64.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_list_meridians.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_list_quest.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_lobby_character.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_lobby_gameinfo.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_lobby_player.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_login_account.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_login_character.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_login_lobby_info.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_login_server_group_info.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_mail.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_make_result.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_make_result_list.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_map_discovery.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_meridians.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_party_base.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_party_info.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_party_member.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_party_member_base.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_player.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_player_character.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_profesion.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_profesion_update.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_quest.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_questbook.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_quest_history.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_redis_community_character.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_repute_quest.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_repute_quest_list.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_server_info.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_skill.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_skillbook.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_skill_list.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_slot.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_slot_list.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_stat_update.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_storage_move.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_storage_move_goods.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_storage_move_insert.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_storage_move_update.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_target_info.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_update_exp.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_update_goods.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_update_goods_list.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_vector.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_zone_character_minion.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_zone_collect_info.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_zone_drop_item_info.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_zone_info.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_zone_monster_info.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_zone_npc_info.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_zone_object_info.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_zone_player_info.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_enchant_stone_info.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_exchange.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_exchange_buybag.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_exchange_context.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_exchange_marketprice.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_exchange_price.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_exchange_realtimeprice.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_game_event.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_item_stone_pair.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_login_character.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_player_equipitem.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_redis_rpcinfo.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_rpc_item.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_rpc_item_list.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_rpc_redis_login_character.h" />
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_server_group_info.h" />
+    <ClInclude Include="gameEventWorker.h" />
+    <ClInclude Include="gamelogManager.h" />
+    <ClInclude Include="gamePacketWorker.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="networkManager.h" />
+    <ClInclude Include="protocol_headers_mp.h" />
+    <ClInclude Include="protocol_headers_mrpc.h" />
+    <ClInclude Include="rpc.h" />
+    <ClInclude Include="rpcManager.h" />
+    <ClInclude Include="serverlogManager.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="user.h" />
+    <ClInclude Include="userManager.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

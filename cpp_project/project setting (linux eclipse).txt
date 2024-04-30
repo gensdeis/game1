@@ -1,0 +1,85 @@
+0. eclipse setting
+- https://avengerhdd.tistory.com/22 참조, Eclipse IDE for C/C++ Developers  다운로드 (2018-12 (4.10.0)
+
+(X) - 빌드시 파일 저장 : Windows > Preferences > C/C++ > New C/C++ Project Wizard > Makefile Project > Behavior => Build on resource save (check)
+- parallel build : Properties > C/C++ Build > Behavior > Enable parallel build
+
+1. network
+
+* Properties > C/C++ Build > Settings > Tool Settings > GCC C++ Compiler > Dialect
+	(X) - Language standard : ISO C++11 (-std=c++0x)
+	- Language standard : ISO C++1y (-std=c++iy)
+
+* Properties > C/C++ Build > Settings > Tool Settings > GCC C++ Compiler > Preprocessor
+	_DEBUG
+	JSON_IS_AMALGAMATION
+
+* Properties > C/C++ Build > Settings > Tool Settings > GCC C++ Compiler > Includes
+	- extraLibrary/boost/include	
+	- extraLibrary/glog/include
+	- extraLibrary/json
+	- extraLibrary/protobuf/include
+	- extraLibrary/proto
+	- extraLibrary
+
+* Properties > C/C++ Build > Settings > Tool Settings > GCC C++ Compiler > Miscellaneous
+	(X) - Other flags : -c -fmessage-length=0 -std=c++0x
+	- Other flags : -c -fmessage-length=0 -std=c++1y
+	
+* [json] folder add
+	- network > New > Folder
+	- [Advanced] button
+	- Link to alternate location (Linked Folder)
+
+2. gameServer
+
+* Properties > C/C++ Build > Settings > Tool Settings > GCC C++ Compiler > Dialect
+	(X) - Language standard : ISO C++11 (-std=c++0x)
+	- Language standard : ISO C++1y (-std=c++iy)
+
+* Properties > C/C++ Build > Settings > Tool Settings > GCC C++ Compiler > Preprocessor
+	_DEBUG
+	JSON_IS_AMALGAMATION
+	
+* Properties > C/C++ Build > Settings > Tool Settings > GCC C++ Compiler > Includes
+	- extraLibrary
+	- extraLibrary/boost/include
+	- extraLibrary/glog/include
+	- extraLibrary/protobuf/include
+	- extraLibrary/redis/include
+	- extraLibrary/pathEngine
+	- extraLibrary/json
+
+* Properties > C/C++ Build > Settings > Tool Settings > GCC C++ Compiler > Miscellaneous
+	(X) - Language standard : ISO C++11 (-std=c++0x)
+	- Language standard : ISO C++1y (-std=c++iy)
+
+* Properties > C/C++ Build > Settings > Tool Settings > GCC C++ Linker > Libraries > Libraries (-l)
+	- network
+	- glog
+	- protobuf
+	- pthread
+	- boost_filesystem
+	- boost_system	
+	- boost_thread
+	- cpp_redis
+	- tacopie
+
+* Properties > C/C++ Build > Settings > Tool Settings > GCC C++ Linker > Libraries > Library search path (-L)
+	- extraLibrary/boost/bin/lib
+	- extraLibrary/glog/bin/lib
+	- extraLibrary/protobuf/bin/lib
+	- extraLibrary/redis/bin/lib
+	- extraLibrary/network/bin/lib
+
+* Properties > C/C++ Build > Settings > Build Artifact
+	- Artifact name : ${ProjName}  ===>  ${workspace_loc}/game/bin/${ProjName}
+	
+* [common, navmesh, proto, table] folder add
+	- game > New > Folder
+	- [Advanced] button
+	- Link to alternate location (Linked Folder)
+
+
+
+

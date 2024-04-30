@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="game">
+      <UniqueIdentifier>{635378c2-7de5-45ff-b191-752f414e70b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol">
+      <UniqueIdentifier>{d513809d-3c7c-4906-9c42-748bc561f772}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\struct">
+      <UniqueIdentifier>{0da628c7-7f51-4e79-bb8b-4369a37efd7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\rpc">
+      <UniqueIdentifier>{26b5e60e-acc1-4639-acc0-dea4821f5591}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\game">
+      <UniqueIdentifier>{8b64c14c-20a6-42e2-baf5-7b0f5c31c3e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="precompiled">
+      <UniqueIdentifier>{044322c1-911b-468f-b137-2282ab1d5e6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{45b3003c-a28f-4679-b520-bc4b660d8328}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="gameEventWorker.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="gamePacketWorker.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="networkManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="rpcManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="user.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="userManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelogManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>precompiled</Filter>
+    </ClCompile>
+    <ClCompile Include="rpc.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\extraLibrary\common\action_logger.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gamePacketWorker.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="networkManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="rpc.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="rpcManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="user.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="userManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_ability_value.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_boss_contribution.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_buff.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_character_ability.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_character_ability_stat.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_character_stat.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_comm_character.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_comm_equip.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_comm_equip_list.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_daily_content.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_damage_list.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_damage_result.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_drop_item_info.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_enchant_option.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_enchant_option_list.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_enchant_options.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_equip_info.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_equip_info_list.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_equip_item_info.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_equip_list.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_exchange_buybag_item.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_exchange_buybag_list.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_exchange_item_count.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_exchange_item_count_list.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_exchange_item_info.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_exchange_market_price.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_exchange_registrant_item.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_exchange_registrant_list.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_field_boss.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_game_setup.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_guild_member.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_inventory.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_item.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_item_add.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_item_count_update.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_item_id.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_item_iuid.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_item_iuid_list.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_item_option.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_list_int64.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_list_meridians.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_list_quest.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_lobby_character.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_lobby_gameinfo.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_lobby_player.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_login_account.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_login_character.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_login_lobby_info.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_login_server_group_info.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_mail.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_make_result.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_make_result_list.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_map_discovery.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_meridians.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_party_base.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_party_info.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_party_member.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_party_member_base.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_player.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_player_character.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_profesion.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_profesion_update.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_quest.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_quest_history.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_questbook.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_redis_community_character.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_repute_quest.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_repute_quest_list.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_server_info.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_slot.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_slot_list.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_stat_update.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_target_info.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_update_goods.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_update_goods_list.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_vector.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_zone_character_minion.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_zone_collect_info.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_zone_drop_item_info.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_zone_info.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_zone_monster_info.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_zone_npc_info.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_zone_object_info.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_zone_player_info.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_exchange.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_exchange_buybag.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_exchange_context.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_exchange_marketprice.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_exchange_price.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_exchange_realtimeprice.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_login_character.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_player_equipitem.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_redis_rpcinfo.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_rpc_item.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_rpc_item_list.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_rpc_redis_login_character.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_character.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\rpc_protocol.h">
+      <Filter>protocol\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\base_protocol.h">
+      <Filter>protocol\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_skill.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_skill_list.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_skillbook.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\mp_error_message.h">
+      <Filter>protocol\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_account_storage.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_storage_move.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_storage_move_goods.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_storage_move_insert.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_storage_move_update.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_game_event.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_enchant_stone_info.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_item_stone_pair.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\common\process_info.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="gameEventWorker.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_cart_item.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_cash_shop_buy_count.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\base_protocol_enumstring.h">
+      <Filter>protocol\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\rpc_protocol_enumstring.h">
+      <Filter>protocol\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelogManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mrpcs_server_group_info.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_contents_onoff_info.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_contents_onoff_data.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\protocol\struct\mps_update_exp.h">
+      <Filter>protocol\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="serverlogManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>precompiled</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol_headers_mp.h">
+      <Filter>precompiled</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol_headers_mrpc.h">
+      <Filter>precompiled</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extraLibrary\common\action_logger.h">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
